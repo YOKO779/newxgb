@@ -95,7 +95,7 @@ def main():
     体育活动量 = st.selectbox(column_name_mapping["Physical activity"] + " (低活动量 = 1, 中活动量 = 2, 高活动量 = 3)", [1, 2, 3], index=0)
     慢性疼痛 = st.selectbox(column_name_mapping["Chronic pain"] + " (有 = 1, 无 = 0)", [1, 0], index=1)
     营养状态 = st.selectbox(column_name_mapping["Nutritional status"] + " (营养良好 = 0, 营养不良风险 = 1, 营养不良 = 2)", [0, 1, 2], index=1)
-    肌少症 = st.number_input(column_name_mapping["Sarcopenia"] + " (是 = 1, 否 = 0)", [1, 0], index=1)
+    肌少症 = st.selectbox(column_name_mapping["Sarcopenia"] + " (是 = 1, 否 = 0)", [1, 0], index=1)
     查尔斯共病指数 = st.number_input(column_name_mapping["Charlson Comorbidity Index"], value=2, min_value=0, max_value=30, step=1)
     糖尿病肾病 = st.selectbox(column_name_mapping["Diabetic nephropathy"] + " (有 = 1, 无 = 0)", [1, 0], index=1)
 
